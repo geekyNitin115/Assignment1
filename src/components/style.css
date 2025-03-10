@@ -1,0 +1,38 @@
+/* Global Reset & Defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden; /* Prevents unwanted horizontal scrolling */
+    font-family: Arial, sans-serif;
+}
+
+/* Common Styles */
+.button-group {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.demo-button {
+    background: #fb923c;
+    color: white;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.demo-button:hover {
+    background: #f97316;
+}

@@ -1,0 +1,157 @@
+/* Main Container */
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Video Wrapper */
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;  /* ✅ Fixed Width */
+    height: 654px; /* ✅ Fixed Height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 12px; /* Optional: Adds soft rounded corners */
+    margin-bottom: 40px;  /* ✅ Added space between video & partners */
+}
+
+/* Video Player */
+.promo-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures video scales properly */
+    border-radius: 12px;
+}
+
+/* Play/Pause Button */
+.video-control {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75px;
+    height: 75px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+    font-size: 24px;
+    color: #28a745;
+}
+
+.video-control:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Play & Pause Icons */
+.play-icon,
+.pause-icon {
+    color: #28a745;
+}
+
+/* ============================= */
+/* Partners Section Styling      */
+/* ============================= */
+.partners {
+    background-color: #fb923c; /* Light orange background */
+    width: 100%;
+    max-width: 1440px;
+    padding-top: 80px;  
+    padding-bottom: 80px;
+    padding-left: 20px;  
+    padding-right: 20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+/* 'Perfected by' text */
+.perfected {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+
+/* Logos Styling */
+.partner-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    gap: 50px; /* Adjusted space between logos */
+    padding: 12px 24px; /* Reduced left and right padding */
+    width: 100%; 
+    max-width: 1200px;
+}
+
+.partner-logos img {
+    height: auto;
+    max-width: 120px; /* Adjust logo size */
+}
+
+/* ============================= */
+/* Responsive Design             */
+/* ============================= */
+@media (max-width: 1024px) {
+    .video-wrapper {
+        max-width: 90%;
+        height: auto;
+    }
+
+    .promo-video {
+        height: auto;
+    }
+
+    .video-wrapper {
+        margin-bottom: 30px; /* ✅ Reduce space on smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .video-wrapper {
+        max-width: 90%;
+        height: auto;
+        margin-bottom: 25px; /* ✅ Adjust spacing */
+    }
+
+    .video-control {
+        width: 60px;
+        height: 60px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 420px) {
+    .video-wrapper {
+        max-width: 95%;
+        height: auto;
+        margin-bottom: 20px; /* ✅ Adjust space on mobile */
+    }
+
+    .video-control {
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .partner-logos {
+        gap: 30px; /* Reduce gap for small screens */
+    }
+
+    .partner-logos img {
+        max-width: 80px; /* Reduce logo size */
+    }
+}

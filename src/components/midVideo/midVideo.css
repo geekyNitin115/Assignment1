@@ -1,0 +1,87 @@
+.Text {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    width: 100%;
+    margin-top: 88px;
+}
+
+/* Why Media Section */
+.why-media {
+    text-align: center; 
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto 30px auto; 
+}
+
+.why-media h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #FB923C;
+    margin-bottom: 10px;
+}
+
+.why-media h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    line-height: 1.4;
+    margin-bottom: 12px;
+}
+
+/* Centering Paragraph */
+.why-media p {
+    font-size: 13px;
+    max-width: 786px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Video Wrapper */
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+    height: auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 12px;
+    margin: 40px auto 80px auto;
+}
+
+/* Video Player */
+.promo-video {
+    width: 100%;
+    height: auto; 
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Play/Pause Button */
+.video-control {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75px;
+    height: 75px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+    font-size: 24px;
+    color: #28a745;
+}
+
+.video-control:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
