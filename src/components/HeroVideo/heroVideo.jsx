@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import "./HeroVideo.css"; // Ensure this file exists
+import "./heroVideo.css"; // Ensure this file exists
 
 const HeroVideo = () => {
   const videoRef = useRef(null);
